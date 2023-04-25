@@ -1,6 +1,6 @@
 # NextGen UI
 
-A simplisic UI component library just focused on making readable core layout components for React and Next.js projects.
+A simplisic UI Tailwind component library just focused on making readable core layout components for React and Next.js projects.
 
 ## Installation
 
@@ -38,13 +38,16 @@ function MyComponent() {
 
 ## Components
 
+- **PageContainer**: A container component for page layouts.
+
 - **Container**: A wrapper component for your content.
-- **FlexRow**: A flexbox-based row component.
-- **FlexCol**: A flexbox-based column component.
+- **Section**: A versatile section component for your layouts.
+
 - **GridRow**: A grid-based row component.
 - **GridCol**: A grid-based column component.
-- **PageContainer**: A container component for page layouts.
-- **Section**: A versatile section component for your layouts.
+
+- **FlexRow**: A flexbox-based row component.
+- **FlexCol**: A flexbox-based column component.
 
 ## Customizing Styles
 
