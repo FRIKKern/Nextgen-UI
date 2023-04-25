@@ -1,6 +1,6 @@
 # NextGen UI
 
-A simplisic UI component library just focused on making readable components for React and Next.js projects.
+A simplisic UI component library just focused on making core readable components for React and Next.js projects.
 
 ## Installation
 
