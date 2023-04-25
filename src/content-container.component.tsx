@@ -1,9 +1,9 @@
 import React from 'react';
 import { IBaseComponentProps } from './types';
 
-const Container: React.FC<IBaseComponentProps> = ({ children, className, style }) => {
+const Container: React.FC<IBaseComponentProps> = ({ children, ...rest }) => {
     return (
-        <div className={className || ''} style={style}>
+        <div  {...rest}>
             {children}
         </div>
     );

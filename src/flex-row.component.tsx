@@ -1,9 +1,11 @@
 import React from 'react';
 import { IBaseComponentProps } from './types';
 
-const FlexRow: React.FC<IBaseComponentProps> = ({ children, className, style }) => {
+const FlexRow: React.FC<IBaseComponentProps> = ({ children, className, ...rest }) => {
+    const combinedClassName = `flex-row ${className || ''}`;
+
     return (
-        <div className={`flex-row ${className || ''}`} style={style}>
+        <div className={combinedClassName.trim()} {...rest}>
             {children}
         </div>
     );

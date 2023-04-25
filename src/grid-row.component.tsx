@@ -1,9 +1,11 @@
 import React from 'react';
 import { IBaseComponentProps } from './types';
 
-const GridRow: React.FC<IBaseComponentProps> = ({ children, className, style }) => {
+const GridRow: React.FC<IBaseComponentProps> = ({ children, className, ...rest }) => {
+    const combinedClassName = `grid-row ${className || ''}`;
+
     return (
-        <div className={`grid-row ${className || ''}`} style={style}>
+        <div className={combinedClassName.trim()} {...rest}>
             {children}
         </div>
     );

@@ -1,11 +1,11 @@
 import React from 'react';
 import { IBaseComponentProps } from './types';
 
-const Section: React.FC<IBaseComponentProps> = ({ children, className, style }) => {
+const Section: React.FC<IBaseComponentProps> = ({ children, ...rest }) => {
     return (
-        <div className={className || ''} style={style}>
+        <section {...rest}>
             {children}
-        </div>
+        </section>
     );
 };
 

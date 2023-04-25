@@ -1,13 +1,11 @@
 import React from 'react';
 import { IBaseComponentProps } from './types';
 
-const PageContainer: React.FC<IBaseComponentProps> = ({ children, className, style }) => {
+const PageContainer: React.FC<IBaseComponentProps> = ({ children, ...rest }) => {
     return (
-        <div className={className || ''} style={style}>
-            <main>
-                <div className={`mx-auto`}>{children}</div>
-            </main>
-        </div>
+        <main {...rest}>
+            <div>{children}</div>
+        </main>
     );
 };
 

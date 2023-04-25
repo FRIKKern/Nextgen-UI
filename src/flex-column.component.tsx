@@ -1,9 +1,11 @@
 import React from 'react';
 import { IBaseComponentProps } from './types';
 
-const FlexCol: React.FC<IBaseComponentProps> = ({ children, className, style }) => {
+const FlexCol: React.FC<IBaseComponentProps> = ({ children, className, ...rest }) => {
+    const combinedClassName = `flex-col ${className || ''}`;
+
     return (
-        <div className={`flex-col ${className || ''}`} style={style}>
+        <div className={combinedClassName.trim()} {...rest}>
             {children}
         </div>
     );
