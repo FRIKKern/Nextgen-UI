@@ -1,6 +1,6 @@
 # NextGen UI
 
-A modern and versatile UI component library for React and Next.js projects.
+A simplisic UI component library just focused on making readable components for React and Next.js projects.
 
 ## Installation
 
