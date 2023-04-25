@@ -1,0 +1,35 @@
+{
+  "name": "nextgen-core-ui",
+  "version": "0.0.7",
+  "description": "A modern and versatile UI component library for React and Next.js projects.",
+  "main": "src/index.ts",
+  "files": [
+    "src/**/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FRIKKern/nextgen-ui.git"
+  },
+  "keywords": [
+    "UI",
+    "Next.js",
+    "React"
+  ],
+  "author": "Frikk Jarl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FRIKKern/nextgen-ui/issues"
+  },
+  "homepage": "https://github.com/FRIKKern/nextgen-ui#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/react": "^18.2.0"
+  }
+}
