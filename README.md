@@ -1,6 +1,8 @@
 # NextGen UI
 
-A simplisic UI Tailwind component library just focused on making readable core layout components for React and Next.js projects.
+Simplicity is the feature.
+
+Nextgen Core UI is a simplisic component library which is pretty much not based as.... just focused on making readable core layout components for React and Next.js projects.
 
 ## Installation
 
