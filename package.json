@@ -1,6 +1,6 @@
 {
   "name": "nextgen-core-ui",
-  "version": "0.0.36",
+  "version": "0.0.38",
   "description": "A modern and versatile UI component library for React and Next.js projects.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
