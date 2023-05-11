@@ -1,4 +1,4 @@
-# NextGen UI
+# NextGen Core UI
 
 Simplicity is the feature.
 
@@ -6,16 +6,16 @@ Nextgen Core UI is a simplisic component library which is pretty much not based 
 
 ## Installation
 
-To install the `nextgen-ui` package, run the following command in your project directory:
+To install the `nextgen-core-ui` package, run the following command in your project directory:
 
 ```bash
-npm install nextgen-ui
+npm install nextgen-core-ui
 ```
 
 or
 
 ```bash
-pnpm i nextgen-ui
+pnpm i nextgen-core-ui
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ Import the components you need from the nextgen-ui package and use them in your 
 ### Example
 
 ```jsx
-import { Container, FlexRow, FlexCol } from "nextgen-ui";
+import { Container, FlexRow, FlexCol } from "nextgen-core-ui";
 
 function MyComponent() {
   return (
@@ -43,7 +43,8 @@ function MyComponent() {
 - **PageContainer**: A container component for page layouts.
 
 - **Container**: A wrapper component for your content.
-- **Section**: A versatile section component for your layouts.
+- **Section**: A section component that actually outputs a `<section>` tag. I usually use this before a `<Container>` component to store full-width backgrounds.
+- **InnerSection**: It's not actually a `<section>`, but it makes it easier to read the code. It's just a `<div>`.
 
 - **GridRow**: A grid-based row component.
 - **GridCol**: A grid-based column component.
@@ -56,7 +57,7 @@ function MyComponent() {
 You can customize the styles of the components using the className prop. Pass your custom CSS classes to the components, and they will be applied alongside the default styles.
 
 ```jsx
-import { Container, FlexRow, FlexCol } from "nextgen-ui";
+import { Container, FlexRow, FlexCol } from "nextgen-core-ui";
 
 function MyComponent() {
   return (
@@ -70,4 +71,4 @@ function MyComponent() {
 }
 ```
 
-All components is just based on what a <div> is supposed to do. We do split them into semantics as <section>, but only when a section is used. Else... Just a lot of divs... what can i say? 🙄
+All components is just based on what a `<div>` is supposed to do. We do split them into semantics as `<section>`, but only when a section is used. Else... Just a lot of divs... what can i say? 🙄
