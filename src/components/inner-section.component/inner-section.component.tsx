@@ -5,9 +5,9 @@ interface IInnerSectionProps extends React.HTMLAttributes<HTMLElement> {
     className?: string;
     declarativeOnly?: boolean;
     as?: 'div' | 'section';
-    group?: boolean;
-    fullWidth?: boolean;
-    container?: boolean;
+    disableGroup?: boolean;
+    disableFullWidth?: boolean;
+    disableContainer?: boolean;
 }
 
 /**
@@ -21,19 +21,19 @@ interface IInnerSectionProps extends React.HTMLAttributes<HTMLElement> {
  * 
  * Use this component when you want to group elements together and apply styles to them as a single entity.
  * 
- * You can turn off `group`, `w-full`, and `container` individually, or all together using `declarativeOnly`.
+ * You can disable `group`, `w-full`, and `container` individually, using `disableGroup`, `disableFullWidth`, and `disableContainer`.
  * Also, you can render the InnerSection as 'div' or 'section' using the 'as' prop. The default is 'div'.
  *
  * @param {IInnerSectionProps} props - The component properties
  * @returns {ReactElement} An InnerSection component
  */
 
-const InnerSection: React.FC<IInnerSectionProps> = ({ children, className = '', declarativeOnly = false, as: Component = 'div', group = true, fullWidth = true, container = true, ...rest }) => {
+const InnerSection: React.FC<IInnerSectionProps> = ({ children, className = '', declarativeOnly = false, as: Component = 'div', disableGroup = false, disableFullWidth = false, disableContainer = false, ...rest }) => {
     let baseClasses = '';
     if (!declarativeOnly) {
-        baseClasses += group ? 'group ' : '';
-        baseClasses += fullWidth ? 'w-full ' : '';
-        baseClasses += container ? 'container ' : '';
+        baseClasses += disableGroup ? '' : 'group ';
+        baseClasses += disableFullWidth ? '' : 'w-full ';
+        baseClasses += disableContainer ? '' : 'container ';
     }
 
     const combinedClassName = `${baseClasses}${className}`.trim();
@@ -46,4 +46,3 @@ const InnerSection: React.FC<IInnerSectionProps> = ({ children, className = '', 
 };
 
 export default InnerSection;
-
